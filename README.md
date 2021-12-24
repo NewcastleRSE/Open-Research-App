@@ -1,4 +1,5 @@
 # Standard Project
+
 A template repo for the standard RSE project
 
 ## About
@@ -8,19 +9,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ante a
 Curabitur a tempus arcu. Maecenas blandit risus quam, quis convallis justo pretium in. Suspendisse rutrum, elit at venenatis cursus, dolor ligula iaculis dui, ut dignissim enim justo at ligula. Donec interdum dignissim egestas. Nullam nec ultrices enim. Nam quis arcu tincidunt, auctor purus sit amet, aliquam libero. Fusce rhoncus lectus ac imperdiet varius. Sed gravida urna eros, ac luctus justo condimentum nec. Integer ultrices nibh in neque sagittis, at pretium erat pretium. Praesent feugiat purus id iaculis laoreet. Proin in tellus tristique, congue ante in, sodales quam. Sed imperdiet est tortor, eget vestibulum tortor pulvinar volutpat. In et pretium nisl.
 
 ### Project Team
-Sam Oldham, Newcastle University  ([s.l.oldham1@newcastle.ac.uk](mailto:s.l.oldham1@newcastle.ac.uk))  
-Mark Turner, Newcastle University  ([mark.turner@newcastle.ac.uk](mailto:mark.turner@newcastle.ac.uk))  
+
+Sam Oldham, Newcastle University ([s.l.oldham1@newcastle.ac.uk](mailto:s.l.oldham1@newcastle.ac.uk))  
+Mark Turner, Newcastle University ([mark.turner@newcastle.ac.uk](mailto:mark.turner@newcastle.ac.uk))
 
 ### RSE Contact
-Sam Oldham 
+
+Sam Oldham  
 RSE Team  
 Newcastle University  
-([s.l.oldham1@newcastle.ac.uk](mailto:s.l.oldham1@newcastle.ac.uk))  
+([s.l.oldham1@newcastle.ac.uk](mailto:s.l.oldham1@newcastle.ac.uk))
 
 ## Built With
 
 [React](https://reactjs.org/)  
-[Strapi](https://strapi.io/)   
+[Strapi](https://strapi.io/)
 
 ## Getting Started
 
@@ -44,11 +47,11 @@ How to run tests on your local system.
 
 ### Local
 
-Deploying to a production style setup but on the local system. Examples of this would include `venv`, `anaconda`, `Docker` or `minikube`. 
+Deploying to a production style setup but on the local system. Examples of this would include `venv`, `anaconda`, `Docker` or `minikube`.
 
 ### Production
 
-Deploying to the production system. Examples of this would include cloud, HPC or virtual machine. 
+Deploying to the production system. Examples of this would include cloud, HPC or virtual machine.
 
 ## Usage
 
@@ -56,20 +59,23 @@ Any links to production environment, video demos and screenshots.
 
 ## Roadmap
 
-- [x] Initial Research  
-- [ ] Minimum viable product <-- You are Here  
-- [ ] Alpha Release  
-- [ ] Feature-Complete Release  
+- [x] Initial Research
+- [ ] Minimum viable product <-- You are Here
+- [ ] Alpha Release
+- [ ] Feature-Complete Release
 
 ## Contributing
 
 ### Main Branch
+
 Protected and can only be pushed to via pull requests. Should be considered stable and a representation of production code.
 
 ### Dev Branch
+
 Should be considered fragile, code should compile and run but features may be prone to errors.
 
 ### Feature Branches
+
 A branch per feature being worked on.
 
 https://nvie.com/posts/a-successful-git-branching-model/
@@ -89,6 +95,6 @@ Please cite the associated papers for this work if you use this code:
 }
 ```
 
-
 ## Acknowledgements
+
 This work was funded by a grant from the UK Research Councils, EPSRC grant ref. EP/L012345/1, “Example project title, please update”.
