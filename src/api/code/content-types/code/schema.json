@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "singularName": "code",
+    "pluralName": "codes",
+    "displayName": "Code",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codeURL": {
+      "type": "string"
+    },
+    "codeDOI": {
+      "type": "string"
+    },
+    "openSource": {
+      "type": "boolean"
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}
