@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -28,6 +28,12 @@
       "type": "integer",
       "required": true,
       "min": 0
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::submission.submission",
+      "mappedBy": "project"
     }
   }
 }

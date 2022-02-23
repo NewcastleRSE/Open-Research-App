@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * paper service.
+ * submission service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::paper.paper');
+module.exports = createCoreService('api::submission.submission');

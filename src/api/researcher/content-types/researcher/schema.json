@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,20 +16,30 @@
       "type": "string",
       "required": true
     },
-    "faculty": {
-      "type": "string",
-      "required": true
-    },
     "school": {
       "type": "string",
       "required": true
     },
+    "submission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::submission.submission",
+      "mappedBy": "researcher"
+    },
     "careerStage": {
-      "type": "string",
+      "type": "enumeration",
+      "enum": [
+        "PhD"
+      ],
       "required": true
     },
-    "researcherID": {
-      "type": "uid",
+    "Faculty": {
+      "type": "enumeration",
+      "enum": [
+        "FMS",
+        "SAgE",
+        "HaSS"
+      ],
       "required": true
     }
   }

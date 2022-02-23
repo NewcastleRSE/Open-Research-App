@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * paper router.
+ * submission router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::paper.paper');
+module.exports = createCoreRouter('api::submission.submission');

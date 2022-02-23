@@ -4,10 +4,11 @@
   "info": {
     "singularName": "dataset",
     "pluralName": "datasets",
-    "displayName": "dataset"
+    "displayName": "Dataset",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,6 +17,12 @@
     },
     "format": {
       "type": "string"
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "datasets"
     }
   }
 }

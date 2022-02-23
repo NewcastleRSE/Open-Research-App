@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submissions",
+  "info": {
+    "singularName": "submission",
+    "pluralName": "submissions",
+    "displayName": "Submission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::code.code",
+      "mappedBy": "submission"
+    },
+    "datasets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dataset.dataset",
+      "mappedBy": "submission"
+    },
+    "researcher": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::researcher.researcher",
+      "inversedBy": "submission"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project",
+      "inversedBy": "submission"
+    },
+    "uuid": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}
