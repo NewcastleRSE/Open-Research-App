@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reg_reports",
+  "info": {
+    "singularName": "reg-report",
+    "pluralName": "reg-reports",
+    "displayName": "RegReport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "regReportURL": {
+      "type": "string",
+      "required": true
+    },
+    "regReportFunding": {
+      "type": "boolean",
+      "required": true
+    },
+    "regReportPeerRev": {
+      "type": "boolean",
+      "required": true
+    },
+    "regReportChanges": {
+      "type": "boolean"
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "reg_reports"
+    }
+  }
+}

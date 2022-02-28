@@ -23,6 +23,14 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "datasets"
+    },
+    "dataDOI": {
+      "type": "string",
+      "required": true
+    },
+    "dataLicense": {
+      "type": "string",
+      "required": true
     }
   }
 }

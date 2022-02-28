@@ -33,7 +33,7 @@
       ],
       "required": true
     },
-    "Faculty": {
+    "faculty": {
       "type": "enumeration",
       "enum": [
         "FMS",

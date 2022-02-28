@@ -39,6 +39,66 @@
     "uuid": {
       "type": "uid",
       "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "submission"
+    },
+    "digital_scholarships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::digital-scholarship.digital-scholarship",
+      "mappedBy": "submission"
+    },
+    "materials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::material.material",
+      "mappedBy": "submission"
+    },
+    "monographs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::monograph.monograph",
+      "mappedBy": "submission"
+    },
+    "peer_revs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::peer-rev.peer-rev",
+      "mappedBy": "submission"
+    },
+    "preprints": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::preprint.preprint",
+      "mappedBy": "submission"
+    },
+    "pre_reg_analyses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pre-reg-analysis.pre-reg-analysis",
+      "mappedBy": "submission"
+    },
+    "protocols": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::protocol.protocol",
+      "mappedBy": "submission"
+    },
+    "reg_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reg-report.reg-report",
+      "mappedBy": "submission"
+    },
+    "theses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thesis.thesis",
+      "mappedBy": "submission"
     }
   }
 }

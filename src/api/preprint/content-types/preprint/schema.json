@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preprints",
+  "info": {
+    "singularName": "preprint",
+    "pluralName": "preprints",
+    "displayName": "Preprint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "preprintURL": {
+      "type": "string",
+      "required": true
+    },
+    "preprintDOI": {
+      "type": "string",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "preprints"
+    },
+    "preprintRelease": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

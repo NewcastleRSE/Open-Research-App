@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "digital_scholarships",
+  "info": {
+    "singularName": "digital-scholarship",
+    "pluralName": "digital-scholarships",
+    "displayName": "DigitalScholarship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dsURL": {
+      "type": "string",
+      "required": true
+    },
+    "dsLicense": {
+      "type": "string",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "digital_scholarships"
+    },
+    "dsEmbargo": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

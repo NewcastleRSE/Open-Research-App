@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "protocols",
+  "info": {
+    "singularName": "protocol",
+    "pluralName": "protocols",
+    "displayName": "Protocol",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "protocolURL": {
+      "type": "string",
+      "required": true
+    },
+    "protocolSharing": {
+      "type": "boolean",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "protocols"
+    }
+  }
+}
