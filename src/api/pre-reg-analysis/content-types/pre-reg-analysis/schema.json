@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pre_reg_analyses",
+  "info": {
+    "singularName": "pre-reg-analysis",
+    "pluralName": "pre-reg-analyses",
+    "displayName": "preRegAnalysis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "preRegURL": {
+      "type": "string",
+      "required": true
+    },
+    "preRegDistinction": {
+      "type": "boolean",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "pre_reg_analyses"
+    }
+  }
+}

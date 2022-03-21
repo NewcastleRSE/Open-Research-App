@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "datasets",
+  "info": {
+    "singularName": "dataset",
+    "pluralName": "datasets",
+    "displayName": "Dataset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dataURL": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "datasets"
+    },
+    "dataDOI": {
+      "type": "string",
+      "required": true
+    },
+    "dataLicense": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

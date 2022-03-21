@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectName": {
+      "type": "string",
+      "required": true
+    },
+    "researchArea": {
+      "type": "string",
+      "required": true
+    },
+    "funder": {
+      "type": "string",
+      "required": true
+    },
+    "length": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::submission.submission",
+      "mappedBy": "project"
+    }
+  }
+}

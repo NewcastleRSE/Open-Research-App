@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peer_revs",
+  "info": {
+    "singularName": "peer-rev",
+    "pluralName": "peer-revs",
+    "displayName": "PeerRev",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "peerRevURL": {
+      "type": "string",
+      "required": true
+    },
+    "peerRevResponse": {
+      "type": "boolean",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "peer_revs"
+    }
+  }
+}

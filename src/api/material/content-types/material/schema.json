@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "singularName": "material",
+    "pluralName": "materials",
+    "displayName": "Material",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "materialURL": {
+      "type": "string",
+      "required": true
+    },
+    "materialReproduction": {
+      "type": "boolean",
+      "required": true
+    },
+    "materialRelease": {
+      "type": "boolean",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "materials"
+    }
+  }
+}

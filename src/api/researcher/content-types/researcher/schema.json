@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "researchers",
+  "info": {
+    "singularName": "researcher",
+    "pluralName": "researchers",
+    "displayName": "Researcher",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "school": {
+      "type": "string",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::submission.submission",
+      "mappedBy": "researcher"
+    },
+    "careerStage": {
+      "type": "enumeration",
+      "enum": [
+        "PhD"
+      ],
+      "required": true
+    },
+    "faculty": {
+      "type": "enumeration",
+      "enum": [
+        "FMS",
+        "SAgE",
+        "HaSS"
+      ],
+      "required": true
+    }
+  }
+}

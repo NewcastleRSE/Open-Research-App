@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monographs",
+  "info": {
+    "singularName": "monograph",
+    "pluralName": "monographs",
+    "displayName": "Monograph",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "monographURL": {
+      "type": "string",
+      "required": true
+    },
+    "monographDOI": {
+      "type": "string",
+      "required": true
+    },
+    "monographEmbargo": {
+      "type": "boolean",
+      "required": true
+    },
+    "monographLicense": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "monographs"
+    }
+  }
+}

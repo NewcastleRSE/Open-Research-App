@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "singularName": "code",
+    "pluralName": "codes",
+    "displayName": "Code",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codeURL": {
+      "type": "string"
+    },
+    "codeDOI": {
+      "type": "string"
+    },
+    "openSource": {
+      "type": "boolean"
+    },
+    "codeLicense": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "codes"
+    }
+  }
+}

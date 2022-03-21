@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theses",
+  "info": {
+    "singularName": "thesis",
+    "pluralName": "theses",
+    "displayName": "Thesis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thesisURL": {
+      "type": "string",
+      "required": true
+    },
+    "thesisDOI": {
+      "type": "string",
+      "required": true
+    },
+    "thesisLicense": {
+      "type": "string",
+      "required": true
+    },
+    "thesisEmbargo": {
+      "type": "boolean",
+      "required": true
+    },
+    "submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::submission.submission",
+      "inversedBy": "theses"
+    }
+  }
+}
