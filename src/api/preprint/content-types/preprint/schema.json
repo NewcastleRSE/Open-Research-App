@@ -29,6 +29,14 @@
     "preprintRelease": {
       "type": "boolean",
       "required": true
+    },
+    "PreprintTitle": {
+      "type": "string",
+      "required": true
+    },
+    "preprintLicense": {
+      "type": "string",
+      "required": true
     }
   }
 }

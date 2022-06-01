@@ -26,13 +26,6 @@
       "target": "api::submission.submission",
       "mappedBy": "researcher"
     },
-    "careerStage": {
-      "type": "enumeration",
-      "enum": [
-        "PhD"
-      ],
-      "required": true
-    },
     "faculty": {
       "type": "enumeration",
       "enum": [
@@ -40,6 +33,10 @@
         "SAgE",
         "HaSS"
       ],
+      "required": true
+    },
+    "careerStage": {
+      "type": "string",
       "required": true
     }
   }

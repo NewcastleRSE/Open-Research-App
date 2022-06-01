@@ -31,6 +31,26 @@
     "dataLicense": {
       "type": "string",
       "required": true
+    },
+    "dataTitle": {
+      "type": "string",
+      "required": true
+    },
+    "dataMetadata": {
+      "type": "boolean",
+      "required": true
+    },
+    "dataFair": {
+      "type": "boolean",
+      "required": true
+    },
+    "dataRelease": {
+      "type": "boolean",
+      "required": true
+    },
+    "dataConf": {
+      "type": "boolean",
+      "required": true
     }
   }
 }

@@ -29,6 +29,10 @@
     "dsEmbargo": {
       "type": "boolean",
       "required": true
+    },
+    "dsTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

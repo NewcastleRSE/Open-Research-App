@@ -33,6 +33,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "theses"
+    },
+    "thesisTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -29,6 +29,18 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "codes"
+    },
+    "codeTitle": {
+      "type": "string",
+      "required": true
+    },
+    "codeRelease": {
+      "type": "boolean",
+      "required": true
+    },
+    "codeConf": {
+      "type": "boolean",
+      "required": true
     }
   }
 }

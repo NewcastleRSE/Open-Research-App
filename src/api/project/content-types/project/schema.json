@@ -18,15 +18,15 @@
     },
     "researchArea": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "funder": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "length": {
       "type": "integer",
-      "required": true,
+      "required": false,
       "min": 0
     },
     "submission": {

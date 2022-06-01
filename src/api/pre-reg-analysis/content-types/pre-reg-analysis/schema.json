@@ -25,6 +25,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "pre_reg_analyses"
+    },
+    "preRegTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -25,6 +25,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "protocols"
+    },
+    "protocolTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

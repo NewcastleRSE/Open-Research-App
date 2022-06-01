@@ -33,6 +33,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "articles"
+    },
+    "articleTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

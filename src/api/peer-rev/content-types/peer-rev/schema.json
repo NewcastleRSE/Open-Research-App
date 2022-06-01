@@ -25,6 +25,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "peer_revs"
+    },
+    "peerRevTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }

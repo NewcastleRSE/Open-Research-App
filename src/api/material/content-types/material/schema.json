@@ -29,6 +29,10 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "materials"
+    },
+    "materialTitle": {
+      "type": "string",
+      "required": true
     }
   }
 }
