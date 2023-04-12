@@ -1,0 +1,30 @@
+diff --git a/node_modules/grant/config/oauth.json b/node_modules/grant/config/oauth.json
+index da4e41b..fe286c0 100644
+--- a/node_modules/grant/config/oauth.json
++++ b/node_modules/grant/config/oauth.json
+@@ -1063,6 +1063,11 @@
+     "access_url": "https://www.upwork.com/api/auth/v1/oauth/token/access",
+     "oauth": 1
+   },
++  "orcid": {
++    "authorize_url": "https://orcid.org/oauth/authorize",
++    "access_url": " https://orcid.org/oauth/token",
++    "oauth": 2
++  },
+   "uservoice": {
+     "request_url": "https://outofindex.uservoice.com/oauth/request_token",
+     "authorize_url": "https://outofindex.uservoice.com/oauth/authorize",
+diff --git a/node_modules/grant/config/profile.json b/node_modules/grant/config/profile.json
+index 365ba91..1f6b736 100644
+--- a/node_modules/grant/config/profile.json
++++ b/node_modules/grant/config/profile.json
+@@ -395,6 +395,9 @@
+   "optimizely": {
+     "profile_url": ""
+   },
++  "orcid": {
++    "profile_url": "https://orcid.org/my-orcid"
++  },
+   "patreon": {
+     "profile_url": ""
+   },

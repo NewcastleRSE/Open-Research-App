@@ -1,0 +1,24 @@
+diff --git a/node_modules/purest/config/providers.json b/node_modules/purest/config/providers.json
+index 8dd1dae..a7aa51a 100644
+--- a/node_modules/purest/config/providers.json
++++ b/node_modules/purest/config/providers.json
+@@ -2000,6 +2000,19 @@
+       "path": "services/oauth2/{path}"
+     }
+   },
++  "orcid": {
++    "default": {
++      "origin": "https://pub.orcid.org",
++      "path": "v3.0/{path}",
++      "headers": {
++        "authorization": "Bearer {auth}"
++      }
++    },
++    "oauth": {
++      "origin": "https://orcid.org",
++      "path": "oauth/{path}"
++    }
++  },  
+   "sendgrid": {
+     "default": {
+       "origin": "https://api.sendgrid.com",
