@@ -9,11 +9,11 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.6",
     "@strapi/plugin-users-permissions": "4.6",
     "@strapi/strapi": "4.6",
+    "koa2-cors": "^2.0.6",
     "mysql": "^2.18.1"
   },
   "author": {

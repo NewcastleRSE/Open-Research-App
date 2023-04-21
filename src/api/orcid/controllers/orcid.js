@@ -28,7 +28,7 @@ module.exports = {
       ctx.send({ message: error.message });
     }
   },
-  getUserInfo: async (ctx) => {
+  async getUserInfo(ctx) {
     const orcid = ctx.request.body.orcidID;
     const accessToken = ctx.request.body.orcidToken;
 
@@ -43,7 +43,6 @@ module.exports = {
           },
         }
       );
-
       const userInfo = response.data;
       ctx.send(userInfo);
     } catch (error) {
