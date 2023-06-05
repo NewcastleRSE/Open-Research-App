@@ -31,7 +31,7 @@ module.exports = {
   async getUserInfo(ctx) {
     const orcid = ctx.request.body.orcidID;
     const accessToken = ctx.request.body.orcidToken;
-
+    console.log("Reached getUserInfo");
     try {
       console.log("trying to get user info");
       const response = await axios.get(
