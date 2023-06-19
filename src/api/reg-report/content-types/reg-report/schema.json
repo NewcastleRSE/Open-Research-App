@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "regReportURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "regReportFunding": {
+    "funding": {
       "type": "boolean",
       "required": true
     },
-    "regReportPeerRev": {
+    "peerRev": {
       "type": "boolean",
       "required": true
     },
-    "regReportChanges": {
+    "reportChanges": {
       "type": "boolean"
     },
     "submission": {
@@ -32,6 +32,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "reg_reports"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

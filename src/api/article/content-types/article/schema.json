@@ -12,20 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "articleURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "articleDOI": {
+    "doi": {
       "type": "string",
       "required": true
     },
-    "articleEmbargo": {
+    "embargo": {
       "type": "boolean",
-      "required": true
-    },
-    "articleLicense": {
-      "type": "string",
       "required": true
     },
     "submission": {
@@ -33,6 +29,16 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "articles"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "license": {
+      "type": "boolean"
     }
   }
 }

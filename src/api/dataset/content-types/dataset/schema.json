@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "dataURL": {
+    "url": {
       "type": "string"
     },
     "format": {
@@ -24,13 +24,31 @@
       "target": "api::submission.submission",
       "inversedBy": "datasets"
     },
-    "dataDOI": {
+    "doi": {
       "type": "string",
       "required": true
     },
-    "dataLicense": {
+    "license": {
       "type": "string",
       "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "metaData": {
+      "type": "boolean"
+    },
+    "fair": {
+      "type": "boolean"
+    },
+    "release": {
+      "type": "boolean"
+    },
+    "conf": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

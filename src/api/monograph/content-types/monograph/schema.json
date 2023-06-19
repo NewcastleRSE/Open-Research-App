@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "monographURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "monographDOI": {
+    "doi": {
       "type": "string",
       "required": true
     },
-    "monographEmbargo": {
+    "embargo": {
       "type": "boolean",
       "required": true
     },
-    "monographLicense": {
+    "license": {
       "type": "string"
     },
     "submission": {
@@ -32,6 +32,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "monographs"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

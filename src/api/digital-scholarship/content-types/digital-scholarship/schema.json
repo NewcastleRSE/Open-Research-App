@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "dsURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "dsLicense": {
+    "license": {
       "type": "string",
       "required": true
     },
@@ -26,9 +26,15 @@
       "target": "api::submission.submission",
       "inversedBy": "digital_scholarships"
     },
-    "dsEmbargo": {
+    "embargo": {
       "type": "boolean",
       "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

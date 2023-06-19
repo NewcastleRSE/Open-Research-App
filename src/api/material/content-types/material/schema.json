@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "materialURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "materialReproduction": {
+    "reproduction": {
       "type": "boolean",
       "required": true
     },
-    "materialRelease": {
+    "release": {
       "type": "boolean",
       "required": true
     },
@@ -29,6 +29,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "materials"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

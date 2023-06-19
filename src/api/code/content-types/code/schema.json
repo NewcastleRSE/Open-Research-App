@@ -12,23 +12,35 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "codeURL": {
+    "url": {
       "type": "string"
     },
-    "codeDOI": {
+    "doi": {
       "type": "string"
     },
     "openSource": {
       "type": "boolean"
-    },
-    "codeLicense": {
-      "type": "string"
     },
     "submission": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "codes"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "release": {
+      "type": "boolean"
+    },
+    "conf": {
+      "type": "boolean"
     }
   }
 }

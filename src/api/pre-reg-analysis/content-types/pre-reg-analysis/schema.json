@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "preRegURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "preRegDistinction": {
+    "distinction": {
       "type": "boolean",
       "required": true
     },
@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "pre_reg_analyses"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

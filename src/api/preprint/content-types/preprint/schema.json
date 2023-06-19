@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "preprintURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "preprintDOI": {
+    "doi": {
       "type": "string",
       "required": true
     },
@@ -26,9 +26,18 @@
       "target": "api::submission.submission",
       "inversedBy": "preprints"
     },
-    "preprintRelease": {
+    "release": {
       "type": "boolean",
       "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
     }
   }
 }

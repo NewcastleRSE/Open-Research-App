@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "thesisURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "thesisDOI": {
+    "doi": {
       "type": "string",
       "required": true
     },
-    "thesisLicense": {
+    "license": {
       "type": "string",
       "required": true
     },
-    "thesisEmbargo": {
+    "embargo": {
       "type": "boolean",
       "required": true
     },
@@ -33,6 +33,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "theses"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

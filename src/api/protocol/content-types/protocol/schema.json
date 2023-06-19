@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "protocolURL": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "protocolSharing": {
+    "sharing": {
       "type": "boolean",
       "required": true
     },
@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::submission.submission",
       "inversedBy": "protocols"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
