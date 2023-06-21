@@ -37,6 +37,18 @@
     },
     "url": {
       "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "projects"
+    },
+    "entry": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::entry.entry",
+      "inversedBy": "projects"
     }
   }
 }
