@@ -91,6 +91,9 @@
     },
     "complete": {
       "type": "boolean"
+    },
+    "orcid": {
+      "type": "boolean"
     }
   }
 }

@@ -71,12 +71,6 @@
       "target": "api::submission.submission",
       "mappedBy": "user"
     },
-    "orcidID": {
-      "type": "uid"
-    },
-    "localID": {
-      "type": "uid"
-    },
     "entries": {
       "type": "relation",
       "relation": "oneToMany",
@@ -88,6 +82,22 @@
       "relation": "oneToMany",
       "target": "api::project.project",
       "mappedBy": "user"
+    },
+    "orcid": {
+      "type": "boolean",
+      "required": true
+    },
+    "careerStage": {
+      "type": "string"
+    },
+    "faculty": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
     }
   }
 }

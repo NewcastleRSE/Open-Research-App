@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-06-19T15:59:47.847Z"
+    "x-generation-date": "2023-06-22T14:26:44.118Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1035,12 +1035,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -1132,6 +1126,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -1205,6 +1228,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -1248,6 +1286,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -3350,12 +3405,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -3447,6 +3496,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -3520,6 +3598,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -3563,6 +3656,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -5682,12 +5792,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -5779,6 +5883,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -5852,6 +5985,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -5895,6 +6043,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -8010,12 +8175,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -8107,6 +8266,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -8180,6 +8368,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -8223,6 +8426,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -9458,6 +9678,29 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "selected": {
+                "type": "boolean"
+              },
+              "projects": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "complete": {
+                "type": "boolean"
+              },
+              "orcid": {
+                "type": "boolean"
               }
             }
           }
@@ -10414,6 +10657,176 @@
                                                         "attributes": {
                                                           "type": "object",
                                                           "properties": {}
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "entry": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "id": {
+                                                          "type": "number"
+                                                        },
+                                                        "attributes": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "title": {
+                                                              "type": "string"
+                                                            },
+                                                            "url": {
+                                                              "type": "string"
+                                                            },
+                                                            "doi": {
+                                                              "type": "string"
+                                                            },
+                                                            "type": {
+                                                              "type": "string"
+                                                            },
+                                                            "section": {
+                                                              "type": "string"
+                                                            },
+                                                            "embargo": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "openSource": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "license": {
+                                                              "type": "string"
+                                                            },
+                                                            "release": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "conf": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "metaData": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "format": {
+                                                              "type": "string"
+                                                            },
+                                                            "fair": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "reproduction": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "response": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "distinction": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "sharing": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "funding": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "peerRev": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "reportChanges": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "user": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "number"
+                                                                    },
+                                                                    "attributes": {
+                                                                      "type": "object",
+                                                                      "properties": {}
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "createdAt": {
+                                                              "type": "string",
+                                                              "format": "date-time"
+                                                            },
+                                                            "updatedAt": {
+                                                              "type": "string",
+                                                              "format": "date-time"
+                                                            },
+                                                            "publishedAt": {
+                                                              "type": "string",
+                                                              "format": "date-time"
+                                                            },
+                                                            "createdBy": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "number"
+                                                                    },
+                                                                    "attributes": {
+                                                                      "type": "object",
+                                                                      "properties": {}
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "updatedBy": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "number"
+                                                                    },
+                                                                    "attributes": {
+                                                                      "type": "object",
+                                                                      "properties": {}
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
                                                         }
                                                       }
                                                     }
@@ -11492,12 +11905,6 @@
                           }
                         }
                       },
-                      "orcidID": {
-                        "type": "string"
-                      },
-                      "localID": {
-                        "type": "string"
-                      },
                       "entries": {
                         "type": "object",
                         "properties": {
@@ -11511,131 +11918,7 @@
                                 },
                                 "attributes": {
                                   "type": "object",
-                                  "properties": {
-                                    "title": {
-                                      "type": "string"
-                                    },
-                                    "url": {
-                                      "type": "string"
-                                    },
-                                    "doi": {
-                                      "type": "string"
-                                    },
-                                    "type": {
-                                      "type": "string"
-                                    },
-                                    "section": {
-                                      "type": "string"
-                                    },
-                                    "embargo": {
-                                      "type": "boolean"
-                                    },
-                                    "openSource": {
-                                      "type": "boolean"
-                                    },
-                                    "license": {
-                                      "type": "string"
-                                    },
-                                    "release": {
-                                      "type": "boolean"
-                                    },
-                                    "conf": {
-                                      "type": "boolean"
-                                    },
-                                    "metaData": {
-                                      "type": "boolean"
-                                    },
-                                    "format": {
-                                      "type": "string"
-                                    },
-                                    "fair": {
-                                      "type": "boolean"
-                                    },
-                                    "reproduction": {
-                                      "type": "boolean"
-                                    },
-                                    "response": {
-                                      "type": "boolean"
-                                    },
-                                    "distinction": {
-                                      "type": "boolean"
-                                    },
-                                    "sharing": {
-                                      "type": "boolean"
-                                    },
-                                    "funding": {
-                                      "type": "boolean"
-                                    },
-                                    "peerRev": {
-                                      "type": "boolean"
-                                    },
-                                    "reportChanges": {
-                                      "type": "boolean"
-                                    },
-                                    "user": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "createdAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "createdBy": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "updatedBy": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
+                                  "properties": {}
                                 }
                               }
                             }
@@ -11661,6 +11944,21 @@
                             }
                           }
                         }
+                      },
+                      "orcid": {
+                        "type": "boolean"
+                      },
+                      "careerStage": {
+                        "type": "string"
+                      },
+                      "faculty": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
+                      },
+                      "school": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -11709,6 +12007,35 @@
                 }
               }
             }
+          },
+          "selected": {
+            "type": "boolean"
+          },
+          "projects": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "complete": {
+            "type": "boolean"
+          },
+          "orcid": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -12731,12 +13058,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -12828,6 +13149,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -12901,6 +13251,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -12944,6 +13309,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -15050,12 +15432,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -15147,6 +15523,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -15220,6 +15625,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -15263,6 +15683,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -17355,12 +17792,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -17452,6 +17883,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -17525,6 +17985,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -17568,6 +18043,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -19660,12 +20152,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -19757,6 +20243,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -19830,6 +20345,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -19873,6 +20403,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -21973,12 +22520,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -22070,6 +22611,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -22143,6 +22713,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -22186,6 +22771,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -23392,6 +23994,17 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "entry": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": "string or id"
               }
             }
           }
@@ -24308,12 +24921,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -24405,6 +25012,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -24478,6 +25114,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -24521,6 +25172,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -25618,6 +26286,23 @@
               }
             }
           },
+          "entry": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -26627,12 +27312,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -26724,6 +27403,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -26797,6 +27505,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -26840,6 +27563,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -28946,12 +29686,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -29043,6 +29777,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -29116,6 +29879,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -29159,6 +29937,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -31263,12 +32058,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -31360,6 +32149,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -31433,6 +32251,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -31476,6 +32309,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
@@ -33688,12 +34538,6 @@
                                                                 }
                                                               }
                                                             },
-                                                            "orcidID": {
-                                                              "type": "string"
-                                                            },
-                                                            "localID": {
-                                                              "type": "string"
-                                                            },
                                                             "entries": {
                                                               "type": "object",
                                                               "properties": {
@@ -33785,6 +34629,35 @@
                                                                               }
                                                                             }
                                                                           },
+                                                                          "selected": {
+                                                                            "type": "boolean"
+                                                                          },
+                                                                          "projects": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "data": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                  "type": "object",
+                                                                                  "properties": {
+                                                                                    "id": {
+                                                                                      "type": "number"
+                                                                                    },
+                                                                                    "attributes": {
+                                                                                      "type": "object",
+                                                                                      "properties": {}
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "complete": {
+                                                                            "type": "boolean"
+                                                                          },
+                                                                          "orcid": {
+                                                                            "type": "boolean"
+                                                                          },
                                                                           "createdAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
@@ -33858,6 +34731,21 @@
                                                                 }
                                                               }
                                                             },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "careerStage": {
+                                                              "type": "string"
+                                                            },
+                                                            "faculty": {
+                                                              "type": "string"
+                                                            },
+                                                            "fullName": {
+                                                              "type": "string"
+                                                            },
+                                                            "school": {
+                                                              "type": "string"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -33901,6 +34789,23 @@
                                                               }
                                                             }
                                                           }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "entry": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "id": {
+                                                          "type": "number"
+                                                        },
+                                                        "attributes": {
+                                                          "type": "object",
+                                                          "properties": {}
                                                         }
                                                       }
                                                     }
@@ -36341,12 +37246,6 @@
                                                   }
                                                 }
                                               },
-                                              "orcidID": {
-                                                "type": "string"
-                                              },
-                                              "localID": {
-                                                "type": "string"
-                                              },
                                               "entries": {
                                                 "type": "object",
                                                 "properties": {
@@ -36438,6 +37337,35 @@
                                                                 }
                                                               }
                                                             },
+                                                            "selected": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "projects": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "data": {
+                                                                  "type": "array",
+                                                                  "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "complete": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "orcid": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -36511,6 +37439,21 @@
                                                   }
                                                 }
                                               },
+                                              "orcid": {
+                                                "type": "boolean"
+                                              },
+                                              "careerStage": {
+                                                "type": "string"
+                                              },
+                                              "faculty": {
+                                                "type": "string"
+                                              },
+                                              "fullName": {
+                                                "type": "string"
+                                              },
+                                              "school": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -36554,6 +37497,23 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entry": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "number"
+                                          },
+                                          "attributes": {
+                                            "type": "object",
+                                            "properties": {}
                                           }
                                         }
                                       }
